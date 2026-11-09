@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-navy: #0F2942;
+    --brand-slate: #335C81;
+    --brand-coral: #E26D5C;
+    --brand-orange: #F26419;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+}
+
+/* Triangular Geometric Motifs */
+.triangle-pattern-light {
+  background-image: radial-gradient(circle at 1px 1px, rgba(51, 92, 129, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.triangle-accent-down {
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.triangle-accent-up {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.triangle-corner-tl {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.triangle-corner-br {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
